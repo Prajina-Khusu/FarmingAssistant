@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services </title>
+   
+    <link rel="stylesheet" href="static/style1.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" >Farming Assistant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='{{url_for("index")}}'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href='{{url_for("about")}}'>About</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href='{{url_for("fertilizer")}}'>Fertilizer Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("seeds")}}'>Seed Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("programs")}}'>Programs</a></li>
+            </ul>
+          </li>
+  
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-success" type="submit"><a href='{{url_for("panel")}}' style="color:white; text-decoration: none;">Login/SignUp</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    
+    
+    <div>
+      <img src="static/images/ferpage.jpg" class="w-100" alt="image"><br><br>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div > 
+            
+            <h5>The Scenario</h5>
+           <p style="text-align:justify;"> Fertilizer distribution in Nepal is managed by the government through the Ministry of Agriculture and Livestock Development (MOALD) and the Department of Agriculture (DoA). The government aims to ensure that fertilizers are distributed fairly and efficiently to farmers across the country. But due to the unmanaged political conditions fair distribution of the fertilizer is one of the challanging task. FAWS establsihed to make a unbiased enviroment towards  the system.</p>
+            
+            <h5>Solution</h5>
+            <p style="text-align:justify;">
+              To ensure that seeds reach the intended farmers, the government has established a system of farmer registration, similar to the one used for fertilizer distribution. Farmers register with the local agricultural office and provide information about their farm and seed requirements. This information is used to determine the amount of seed subsidy that each farmer is eligible for.
+             </p>
+            
+            <h5>Mission</h5>
+            <p style="text-align:justify;">
+            To accelerate sustainable agriculture development via empowering farmers and local seller,
+            create green jobs, and build a network of the next-generation Agri-prenuers.
+            
+           <h5> Objectives</h5>
+           <p style="text-align:justify;">
+            1)<b>Increase Agricultural Productivity:</b>Increase Agricultural Productivity: One of the primary objectives of fair fertilizer distribution is to increase agricultural productivity. Fertilizers provide essential nutrients to the soil, which help plants grow better and produce higher yields. By distributing fertilizers fairly, farmers are able to access the resources they need to improve their crop yields, leading to increased food production and improved food security.<br>
+            2)<b>Improve Livelihoods of Farmers:</b> Fair distribution of fertilizers also aims to improve the livelihoods of farmers. By providing subsidies on fertilizers, farmers are able to access these inputs at a reduced cost, making it easier for them to afford the resources they need to improve their crop yields. This, in turn, can lead to increased income for farmers and improved living standards for their families.<br>
+
+            3)<b>Ensure Equitable Access: </b>Another objective of fair fertilizer distribution is to ensure equitable access to fertilizers for all farmers, regardless of their location, socio-economic status, or other factors. By providing subsidies on fertilizers and establishing a system of farmer registration, the government aims to ensure that all farmers have access to the resources they need to improve their crop yields and livelihoods.<br>
+
+            4)<b>Promote Sustainable Agriculture: </b>Fair distribution of fertilizers also aims to promote sustainable agriculture practices. By providing farmers with the resources they need to improve their crop yields, farmers are less likely to resort to unsustainable practices such as over-fertilization, which can lead to soil degradation and environmental damage.<br>
+            5)<b>Improve Food Security:</b> Finally, fair distribution of fertilizers aims to improve food security by increasing agricultural productivity
+            
+      
+           </p>
+   
+         </div>
+        </div>
+      </div> 
+    
+  <br>
+
+  <div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image__header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content__header">
+                    <h4 class="chatbox__heading__header">Chat support</h4>
+                    <p class="chatbox__description__header">Hi. My name is Kisan. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send__footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="static/images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }}; //originally curly braces instead of small
+    </script>
+    <script type="text/javascript" src="static/app.js"></script>
+
+
+  <footer>
+    <p class="p-3 bg-dark text-white text-center">@2023.Farming Assistant Web Service </p>
+</footer>
+
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

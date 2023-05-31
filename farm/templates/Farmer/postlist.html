@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>Crop Name</tr>
+        <tr>Quantity</tr>
+        <tr>Phone No</tr>
+        <tr>Remaeks</tr>
+    </thead>
+{% for post in posts %}
+<br>
+    <tbody>
+        <td>{{ post["CropName"] }}</td>
+        <td>{{ post["quantity"] }}</td>
+        <td>{{ post["contact"] }}</td>
+        <td>{{ post["remarks"] }}</td>
+
+    </tbody>
+
+
+{% endfor %}
+
+</table>

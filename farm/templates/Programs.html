@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+   
+    <link rel="stylesheet" href="static/style1.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" >Farming Assistant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='{{url_for("index")}}'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href='{{url_for("about")}}'>About</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href='{{url_for("fertilizer")}}'>Fertilizer Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("seeds")}}'>Seed Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("programs")}}'>Programs</a></li>
+            </ul>
+          </li>
+  
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-success" type="submit"><a href='{{url_for("panel")}}' style="color:white; text-decoration: none;">Login/SignUp</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    
+    
+    <div>
+      <img src="static/images/programs.jpg" class="w-100" alt="image"><br><br>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div > 
+            
+            <h5>The Scenario</h5>
+           <p style="text-align:justify;"> 
+            FAWS also oraganize programs in collaboration with the most important person in the country i.e farmers, seller and municipality. A progarmme based on agricultural and sustainable development is being held.An agricultural program can refer to a wide range of initiatives and activities designed to support and promote agricultural development</p><br>
+            
+            <h5>Activities </h5>
+            <p style="text-align:justify;">
+              1)<b>Training and Capacity Building:</b>Training and Capacity Building: Agricultural training and capacity building programs aim to provide farmers and other stakeholders with the skills and knowledge they need to improve their agricultural practices. This can include training on new farming techniques, agribusiness management, and other skills that can help farmers to increase their productivity and income.<br>
+              2)<b>Extension Services:</b> Agricultural extension services are designed to provide farmers with access to information and resources that can help them to make informed decisions about their farming practices. Extension agents may provide advice on topics such as crop selection, pest management, and soil fertility.<br>
+              3)<b>Research and Development:</b> Agricultural research and development programs aim to identify new technologies and approaches that can help to improve agricultural productivity and sustainability. This can include research on new crop varieties, irrigation systems, and other innovations that can help farmers to grow more food with fewer resources.<br>
+
+              4)<b>Rural Infrastructure Development: </b>Rural infrastructure development programs aim to improve access to essential services such as roads, water supply, and electricity. This can help farmers to transport their produce to markets, access inputs such as fertilizers and seeds, and improve their overall quality of life.<br>
+              5)<b>Market Development: </b>Agricultural market development programs aim to support farmers in accessing local, regional, and international markets. This can involve supporting the development of value chains, improving market information systems, and providing support for export promotion.<br>
+             </p>
+            
+           
+           <h5> Objectives</h5>
+           <p style="text-align:justify;">
+           1)<b>Increase Agricultural Productivity: </b> Agricultural programs aim to increase agricultural productivity and efficiency by introducing new technologies, improved seed varieties, and modern farming practices.<br>
+           2)<b>Improve Food Security and Nutrition: </b>Agricultural programs aim to increase access to nutritious food by improving agricultural productivity, promoting diversified farming practices, and increasing household income to improve food accessibility.<br>
+           3)<b>Boost Rural Development: </b>Agricultural programs aim to improve the lives and livelihoods of rural communities by providing support for sustainable agricultural practices, promoting market access, and investing in rural infrastructure such as roads, electricity, and water supply.<br>
+           4)<b>Promote Sustainable Agriculture:</b> Agricultural programs aim to promote sustainable agriculture practices that conserve natural resources, preserve biodiversity, and mitigate the impacts of climate change.<br>
+           5)<b>Empower Smallholder Farmers: </b>Empower Smallholder Farmers: Agricultural programs aim to empower smallholder farmers by providing them with access to training, finance, and market opportunities.
+
+           </p>
+   
+         </div>
+        </div>
+      </div> 
+    
+  <br>
+
+  <div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image__header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content__header">
+                    <h4 class="chatbox__heading__header">Chat support</h4>
+                    <p class="chatbox__description__header">Hi. My name is Kisan. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send__footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="static/images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }}; //originally curly braces instead of small
+    </script>
+    <script type="text/javascript" src="static/app.js"></script>
+
+
+  <footer>
+    <p class="p-3 bg-dark text-white text-center">@2023.Farming Assistant Web Service </p>
+</footer>
+
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

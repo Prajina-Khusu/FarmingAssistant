@@ -1,0 +1,163 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body
+{
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+#buyerpost
+{
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top:8px solid darkgreen;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.5);
+     
+}
+
+#buyerpost .title{
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: darkgreen;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#buyerpost .form
+{
+    width: 100%;
+    
+}
+textarea
+{
+    max-width:500px;
+    width: 100%;
+    
+
+}
+
+#buyerpost .form .input_field .textarea
+{
+    resize: none;
+}
+
+
+
+#buyerpost .form .input_field .input,
+#buyerpost .form .input_field .textarea
+{
+    width: 60%;
+    outline: none;
+    border: 1px solid darkgreen;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+
+
+#buyerpost .form .input_field .selectbox
+{
+    position: relative;
+    height:40px;
+    width: 60%;
+    border: 1px solid darkgreen;
+    padding: 8px 10px;
+}
+
+#buyerpost .form .input_field .textarea:focus,
+#buyerpost .form .input_field .input:focus,
+#buyerpost .form .input_field .select:focus
+{
+    border: 1px solid lightgreen;
+}
+
+
+#buyerpost .form .input_field .btn
+{
+    width: 50%;
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: darkgreen;
+    text-align: center;
+   
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#buyerpost .form .input_field .btn:hover{
+
+    background-color: lightgreen;
+    color: black;
+}
+
+
+@media only screen and (max-width:630px )
+{
+    #buyerpost .form .input_field
+{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+#buyerpost .form .input_field label
+{
+    margin-bottom: 5px;
+}
+
+#buyerpost .form .input_field .btn
+{
+  
+margin: 0px;
+    
+}
+#buyerpost
+{
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top:8px solid darkgreen;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.5);
+     
+}
+
+
+  
+}
+
+@media only screen and (max-width:420px )
+
+{
+    #buyerpost
+{
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top:8px solid darkgreen;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.5);
+     
+}
+#buyerpost .form .input_field
+{
+    width : 100%;
+
+}
+}
+
+

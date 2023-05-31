@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="static/style3.css">
+    <link rel="stylesheet" href="static/style1.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href='{{url_for("adminhome")}}'> Farmer Board</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href='{{url_for("apost")}}'>Post</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Queries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href='{{url_for("fqueries")}}'> Farmer Queries</a></li>
+                <li><a class="dropdown-item" href='{{url_for("squeries")}}'>Seller Quieries</a> </li>
+        
+              </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href='{{url_for("apostlist")}}'>Post List</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+            
+            <p  style="color:white; margin: 5px;">Logged in : <strong>{{session.name}} </p>
+            <button class="btn btn-success" type="submit"><a href='{{url_for("logout")}}' style="color:white; text-decoration: none;" >Logout</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="container" id="buyerpost">
+        <div class="title">
+          <b>Post Update/Programs </b>
+        </div>
+        <div class="form">
+          <form action="{{url_for('apost')}}" method="post">
+            {% if mesage is defined and mesage %}
+            <div class="alert alert-warning">{{ mesage }}</div>
+          {% endif %}
+      
+      <div class="input_field">
+        
+      <center><textarea name="adminpost" id="" cols="100" rows="10" class="textarea"></textarea></center>  
+      </div>
+       
+      <div class="input_field">
+        <center><input type="submit" value="Post" class="btn"></center>
+      </div>
+          
+      
+        </form>
+        </div>
+      </div>>
+  
+      <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image__header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content__header">
+                        <h4 class="chatbox__heading__header">Chat support</h4>
+                        <p class="chatbox__description__header">Hi. My name is Kisan. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div> </div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send__footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="static/images/chatbox-icon.svg" /></button>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+  
+      <script>
+          $SCRIPT_ROOT ={{ request.script_root|tojson }}; //originally curly braces instead of small
+      </script>
+      <script type="text/javascript" src="static/app.js"></script>
+  
+  
+  
+  
+  
+   
+  
+   </div>
+    
+   <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

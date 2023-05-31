@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farming Assistant Web Service </title>
+    <link rel="stylesheet" href="static/style1.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" >Farming Assistant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='{{url_for("index")}}'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href='{{url_for("about")}}'>About</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href='{{url_for("fertilizer")}}'>Fertilizer Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("seeds")}}'>Seed Distribution</a></li>
+              <li><a class="dropdown-item" href='{{url_for("programs")}}'>Programs</a></li>
+            </ul>
+          </li>
+  
+        
+        </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-success" type="submit"><a href='{{url_for("panel")}}' style="color:white; text-decoration: none;">Login/SignUp</a></button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+ <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/front2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Step Ahead to Make A Digital World</h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/veg.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Transparent World</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="static/images/fertilizers.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Enage with the various progarm organize by the government </h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section class="my-3">
+    <div class="py-5">
+        <h2 class="text-center">About Us</h2>
+    </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 coli-md-6 col-12">
+            <img src="static/images/aboutus.jpg" alt="" class="img-fluid aboutimg">
+        </div> 
+        <div class="col-lg-6 coli-md-6 col-12">
+            <h4 class="display-6">Farming Assistant Web Service </h4>
+            <p class="py-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum odit, iusto a cumque pariatur vel quisquam maxime voluptates. Veniam, maiores? Nobis odit temporibus, officiis aperiam distinctio nam hic delectus.</p>
+            <a href='{{url_for("about")}}' class="btn btn-success">Readmore </a>
+        </div> 
+    </div>
+  </div>
+</section>
+ <section class="my-3">
+    <div class="py-5">
+        <h2 class="text-center">Our Services</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                     <img src="static/images/fertilizer.jpg" class="card-img-top" alt="card 1">
+                     <div class="card-body">
+                         <p class="card-text">Get an update about the fertilizers</p>
+                         <a href='{{url_for("fertilizer")}}' class="btn btn-success ">Readmore </a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                     <img src="static/images/card33.jpg" class="card-img-top" alt="card 1">
+                     <div class="card-body">
+                         <p class="card-text">Get an update about the seeds </p>
+                         <a href='{{ url_for("seeds")}}' class="btn btn-success ">Readmore </a>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                     <img src="static/images/card22.jpg" class="card-img-top" alt="card 1">
+                     <div class="card-body">
+                         <p class="card-text">Progarm updates from municipality</p>
+                         <a href='{{url_for("programs")}}' class="btn btn-success ">Readmore </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     <div>
+
+    </div>
+ </section>
+
+
+
+
+
+ <div class="container">
+  <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image__header">
+                  <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+              </div>
+              <div class="chatbox__content__header">
+                  <h4 class="chatbox__heading__header">Chat support</h4>
+                  <p class="chatbox__description__header">Hi. My name is Kisan. How can I help you?</p>
+              </div>
+          </div>
+          <div class="chatbox__messages">
+              <div></div>
+          </div>
+          <div class="chatbox__footer">
+              <input type="text" placeholder="Write a message...">
+              <button class="chatbox__send__footer send__button">Send</button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button><img src="static/images/chatbox-icon.svg" /></button>
+      </div>
+  </div>
+</div>
+
+  <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }}; //originally curly braces instead of small
+  </script>
+  <script type="text/javascript" src="static/app.js"></script>
+
+
+ 
+ <footer>
+    <p class="p-3 bg-dark text-white text-center sticky-bottom">@2023.Farming Assistant Web Service </p>
+</footer>
+
+ </div>
+ <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

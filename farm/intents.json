@@ -1,0 +1,389 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "hello!", "hey" ,"namaste","sup","what's up","hlo","oi"],
+      "responses": ["Hello, thanks for visiting.","Good to see you.","Hi there, how can I help?","Hello","Namaste"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","by"],
+      "responses": ["See you later., thanks for visiting.","Have a nice day.","Bye! Come back again soon."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful","tq u"],
+      "responses": ["Happy to help!","Any time!","My pleasure."]
+    },
+    {
+      "tag": "wassup",
+      "patterns": ["Wassup?", "What are you doing?", "What is up with you?", "What are you up to?", "How is it going?"],
+      "responses": ["i'm just chilling.","i am enjoying day.","i'm fine."]
+    },
+    {
+      "tag": "marketprice",
+      "patterns": ["What is the market price of rice?", "How much is the cost of 10 kgs of wheat?", "What are the prices of sugarcane?"],
+      "responses": ["please visit our application.","please visit our website for more detail.","i request you to please visit our website."]
+    },
+    {
+      "tag": "family",
+      "patterns": ["Who is your father?", "What is your father's name?", "What is your mother's name?","Do you have parents?" ,"Do you have siblings?" ],
+      "responses": ["i don't have knowledge about my family."]
+    },
+    {
+      "tag": "sarcasm",
+      "patterns": ["Are you a God?", "How old are you?", "Are you a man?","Are you a bot?", "Do you have a job?" ,"Who is your best friend?","Am I your friend?"],
+      "responses": ["i'm not able to understand your question.","Please ask some related questions."]
+    },
+    {
+      "tag": "wellness",
+      "patterns": ["How are you?", "How you doing?", "How are you doing?","Are you doing well?", "Are you okay?" ,"Are you fine?","Are you doing okay?"],
+      "responses": ["i'm cool.","always cool.","i'm ok.","i'm fine."]
+    },
+    {
+      "tag": "enquireaboutday",
+      "patterns": ["How was your day?", "How is your day going?", "How is your day?"],
+      "responses": ["It's been great.","It's been good."]
+    },
+    {
+      "tag": "askinghelp",
+      "patterns": ["I need help!", "Need help!", "Help me please", "Help me", "Can you do something for me?", "Answer my question"],
+      "responses": ["i'm here to help you.","i can help you.","i'm here to solve your queries."]
+    },
+    {
+      "tag": "outofscope",
+      "patterns": ["Who is the President?", "Who is the Prime Minister?", "What is my mother's name?", "Are you active in politics?"],
+      "responses": ["your question is out of my knowledge.","i'm not able to answer your question.","i don't have knowledge about that."]
+    },
+    {
+      "tag": "funny",
+      "patterns": ["Tell me a joke!","Tell me something funny!","Do you know a joke?"],
+      "responses": ["Why did the hipster burn his mouth? He drank the coffee before it was cool.","What did the buffalo say when his son left for college? Bison."]
+    },
+    {"tag": "cottonweather",
+      "patterns": ["which weather is suitable for cotton?", "what is temperature for cotton crop?", "cotton crop grows in which temperature?", "temprature for cotton ", "temperature require for cotton crop?"],
+      "responses": ["During active growth, the ideal air temperature is 70 to 100°F (21-37°C).", "ideal air temperature is 70 to 100°F.", "21-37°C temperature is required."]
+    },
+    {"tag": "cottoncondition",
+      "patterns": ["which condition is suitable for cotton crop?", "which condition required for cotton crop?", "condition for cotton crop", "condition suitable for cotton", "condition for more cotton crop production"],
+      "responses": ["It require a lot of heat and plenty of sunshine.", "It prefers warm and humid climate.","Cotton is a plant that needs a long frost-free period."]
+    },
+    {"tag": "wheatweather",
+      "patterns": ["which weather is suitable for wheat?", "what is temperature for wheat crop?", "wheat grows in which temperature?","temperature for wheat", "temperature require for wheat crop?"],
+      "responses": ["The optimum growing temperature is about 25°C.", "minimum and maximum growth temperatures of 3° to 4°C and 30° to 32°C, respectively."]
+    },
+    {"tag": "wheatcondition",
+      "patterns": ["which condition is suitable for wheat crop?", "which condition required for wheat crop?", "condition for wheat crop", "condition suitable for wheat", "condition for more wheat crop production", "which land is suitable for wheat crop"],
+      "responses": ["it needs 12 to 15 inches (31 to 38 centimeters) of water to produce a good crop.", "it needs a lot of sunshine, especially when the grains are filling.", "it grows best when the soil pH is between 6.0 and 7.0."]
+    },
+    {"tag": "bajraweather",
+      "patterns": ["which weather is suitable for bajra?", "what is temperature for bajra crop?", "bajra grows in which temperature?", "temperature for bajra", "temperature require for bajra crop?"],
+      "responses": ["Ideal temperature for bajra cultivation is between 20 oC to 30 oC.", "temperature is between 20 oC to 30 oC."]
+    },
+  {"tag": "bajracondition",
+    "patterns": ["which condition is suitable for bajra crop?", "which condition required for bajra crop?", "condition for bajra crop", "which land is suitable for bajra crop"],
+    "responses": ["Bajra grows well in dry and warm climate conditions", "it's drought tolerant crop which requires low annual rainfall ranging between 40 cm to 60 cm.", "i'm here to solve your queries."]
+  },
+  {"tag": "sugercaneweather",
+    "patterns": ["which weather is suitable for sugercane?", "what is temperature for sugercane crop?", "sugercane grows in which temperature?","temperature for sugercane"],
+    "responses": ["temperature is between 21°C to 27°C", "It grows well in hot and humid climate with a temperature of 21°C to 27°C "]
+  },
+  {"tag": "sugercanecondition",
+    "patterns": ["which condition is suitable for sugercane crop?", "which condition required for sugercane crop?", "condition for sugercane crop","condition suitable for sugercane"],
+    "responses": ["annual rainfall require between 75cm.", "It is a tropical as well as a subtropical crop.", "It grows well in hot and humid climate with a temperature of 21°C to 27°C"]
+  },
+  {"tag": "riceweather",
+    "patterns": ["which weather is suitable for rice?", "what is temperature for rice crop?", "rice grows in which temperature?","temperature for rice"],
+    "responses": ["The average temperature required throughout the life period of the crop ranges from 21 to 37º C.", "the average temperature is between 21 to 37ºC"]
+  },
+  {"tag": "ricecondition",
+    "patterns": ["which condition is suitable for rice crop?", "which condition required for rice crop?", "condition for rice crop","condition suitable for rice"],
+    "responses": ["Rice crop needs a hot and humid climate.","Rice grows on a variety of soils like silts, loams and gravels.", "It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water.", "The average temperature required throughout the life period of the crop ranges from 21 to 37º C."]
+  },
+  {"tag": "peanutnutweather",
+    "patterns": ["which weather is suitable for peanut?", "what is temperature for peanut crop?", "peanut grows in which temperature?","temperature for peanut"],
+    "responses": ["It seems that plant will grow best when the mean temperature is from 21-26.5°C.", "It grows well with a temperature of 21°C to 26.5°C "]
+  },
+  {"tag": "peanutcondition",
+    "patterns": ["which condition is suitable for peanut crop?", "which condition required for peanut crop?", "condition for peanut crop","condition suitable for peanut"],
+    "responses": ["it require well distributed rainfall at least 50 cm during growing season", "it grows in abundance of sunshine and relatively warm temperatures."]
+  },
+  {"tag": "maizeweather",
+    "patterns": ["what is temperature for maize crop?", "maize grows in which temperature?", "temperature for maize"],
+    "responses": ["A temperature of 21°C- 27°C and 50-100cm rainfall is suitable for its cultivation.", "A temperature of 21°C- 27°C is suitable for its cultivation."]
+  },
+	{"tag": "maizecondition",
+    "patterns": ["which condition is suitable for maize crop?", "which condition required for maize crop?", "condition suitable for maize", "land for maize crop"],
+    "responses": ["A temperature of 21°C- 27°C and 50-100cm rainfall is suitable for its cultivation.", "A 50-100cm rainfall is suitable for its cultivation.", "Alternate spells of rains and sunny weather are ideal for maize.", "It grows well in alluvial and red soils with good drainage."]
+  },
+  {"tag": "cauliflowerweather",
+    "patterns": ["what is temperature for cauliflower crop?", "cauliflower grows in which temperature?", "temperature for cauliflower"],
+    "responses": ["A temperature of 15°C- 21°C and 50-100cm rainfall is suitable for its cultivation.", "A temperature of 15°C- 21°C is suitable for its cultivation."]
+  },
+	{"tag": "cauliflowercondition",
+    "patterns": ["which condition is suitable for cauliflower crop?", "which condition required for cauliflower crop?", "condition suitable for cauliflower", "land for cauliflower crop"],
+    "responses": ["A temperature of 15°C- 21°C and 50-100cm rainfall is suitable for its cultivation.", "A 50-100cm rainfall is suitable for its cultivation.", "Alternate spells of rains and sunny weather are ideal for cauliflower.", "It grows well in alluvial and red soils having ph range of 6.0 to 7.0 with good drainage."]
+  },
+  {"tag": "peaweather",
+    "patterns": ["what is temperature for pea crop?", "pea grows in which temperature?", "temperature for pea"],
+    "responses": ["A temperature of 10°C to 25°C (50°F to 77°F) is suitable for its cultivation.", "A temperature of 10°C to 25°C (50°F to 77°F) is suitable for its cultivation."]
+  },
+	{"tag": "peacondition",
+    "patterns": ["which condition is suitable for pea crop?", "which condition required for pea crop?", "condition suitable for pea", "land for pea crop"],
+    "responses": ["Peas are cool-season crops and prefer cooler temperatures between 10°C to 25°C (50°F to 77°F) for optimal growth and development.", "A 50-100cm rainfall is suitable for its cultivation.", "Peas prefer well-drained, fertile soil with a pH range of 6.0 to 7.5. The soil should be rich in organic matter and have good water-holding capacity.", "It grows well in alluvial and red soils having ph range of 6.0 to 7.5 with good drainage."]
+  },
+  {"tag": "paddyweather",
+    "patterns": ["what is temperature for paddy crop?", "paddy grows in which temperature?", "temperature for paddy"],
+    "responses": ["A temperature of 20°C to 35°C (68°F to 95°F) is suitable for its cultivation.", "A temperature of 20°C to 35°C (68°F to 95°F) is suitable for its cultivation."]
+  },
+	{"tag": "paddycondition",
+    "patterns": ["which condition is suitable for paddy crop?", "which condition required for paddy crop?", "condition suitable for paddy", "land for paddy crop"],
+    "responses": [" Paddy is a warm-season crop that requires warm temperatures between 20°C to 35°C (68°F to 95°F) for optimal growth and development.", "Paddy is a crop that requires a lot of water, and it is usually grown in flooded fields or paddy fields. The field should be leveled and irrigated properly to ensure the availability of adequate water for the crop", "Paddy prefer well-drained, fertile soil with a pH range of 5.5 to 7.5. The soil should be rich in organic matter and have good water-holding capacity.", "Paddy is a crop that requires a lot of water, and it is usually grown in flooded fields or paddy fields. The field should be leveled and irrigated properly to ensure the availability of adequate water for the crop."]
+  },
+  {"tag": "milletweather",
+    "patterns": ["what is temperature for millet crop?", "millet grows in which temperature?", "temperature for millet"],
+    "responses": ["A temperature of 25°C to 35°C (77°F to 95°F) is suitable for its cultivation.", "A temperature of 25°C to 35°C (77°F to 95°F) is suitable for its cultivation."]
+  },
+	{"tag": "milletcondition",
+    "patterns": ["which condition is suitable for millet crop?", "which condition required for millet crop?", "condition suitable for millet", "land for millet crop"],
+    "responses": [" Millet prefer well-drained, sandy or loamy soils with a pH range of 6.0 to 7.5. The soil should be rich in organic matter and have good water-holding capacity.", "Millets are warm-season crops and can grow in temperatures ranging from 25°C to 35°C (77°F to 95°F) with an optimum temperature range of around 27°C to 30°C (80.6°F to 86°F). They are also capable of growing in cooler temperatures as low as 15°C (59°F), although this may delay the growth and maturity of the crop", "Millets are drought-resistant and require less water than other crops. However, they still require regular watering to grow and produce a good yield. The soil should be kept moist but not waterlogged to prevent waterlogging and root rot."]
+  },
+  {"tag": "barleyweather",
+    "patterns": ["what is temperature for barley crop?", "barley grows in which temperature?", "temperature for barley"],
+    "responses": ["A temperature of 15°C to 20°C (59°F to 68°F) is suitable for its cultivation.", "A temperature range of around 18°C (64.4°F) is suitable for its cultivation."]
+  },
+  {"tag": "barleycondition",
+    "patterns": ["which condition is suitable for barley crop?", "which condition required for barley crop?", "condition suitable for barley", "land for barley crop"],
+    "responses": [" Barley prefers well-drained, loamy or clay soils with a pH range of 6.0 to 7.5", "Temperature range of around 18°C (64.4°F). Temperatures above 25°C (77°F) can cause heat stress and reduce yield.", "Barley requires adequate water for good growth and yield"]
+  },
+  {"tag": "potatoweather",
+    "patterns": ["what is temperature for potato crop?", "potato grows in which temperature?", "temperature for potato"],
+    "responses": ["A temperature of 15°C to 20°C (59°F to 68°F) is suitable for its cultivation.", "Temperatures above 25°C (77°F) can cause heat stress and reduce yield. Potatoes also require a frost-free period of at least 90 to 120 days."]
+  },
+  {"tag": "potatocondition",
+    "patterns": ["which condition is suitable for potato crop?", "which condition required for potato crop?", "condition suitable for potato", "land for potato crop"],
+    "responses": ["Potatoes prefer well-drained, fertile soil with a pH range of 5.0 to 6.5. The soil should be rich in organic matter and have good water-holding capacity", "Potatoes also require a frost-free period of at least 90 to 120 days.", "Potatoes require adequate water for good growth and yield. The water requirement of potatoes varies depending on the stage of growth and the local climate conditions."]
+  },
+  {"tag": "juteweather",
+    "patterns": ["what is temperature for jute crop?", "jute grows in which temperature?", "temperature for jute"],
+    "responses": ["A temperature of 24°C to 35°C is suitable for its cultivation.", "Jute requires warm temperatures ranging from 24°C to 35°C for optimal growth and yield."]
+  },
+  {"tag": "jutecondition",
+    "patterns": ["which condition is suitable for jute crop?", "which condition required for jute crop?", "condition suitable for jute", "land for jute crop"],
+    "responses": ["Jute grows best in well-drained fertile soils with a pH range of 6.0 to 7.5. The soil should be rich in organic matter and essential plant nutrients like nitrogen, phosphorus, and potassium. Jute is a heavy feeder and requires regular application of organic and inorganic fertilizers.", "Jute requires warm temperatures ranging from 24°C to 35°C for optimal growth and yield", "Jute requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields."]
+  },
+  {"tag": "tobaccoweather",
+    "patterns": ["what is temperature for tobacco crop?", "tobacco grows in which temperature?", "temperature for tobacco"],
+    "responses": ["A temperature of 20°C to 30°C is suitable for its cultivation.", "obacco requires warm temperatures ranging from 20°C to 30°C for optimal growth and yield."]
+  },
+  {"tag": "tobaccocondition",
+    "patterns": ["which condition is suitable for tobacco crop?", "which condition required for tobacco crop?", "condition suitable for tobacco", "land for tobacco crop"],
+    "responses": ["Tobacco grows best in well-drained, fertile soils that are rich in organic matter and essential plant nutrients.","The soil pH range should be between 6.0 to 6.5, and the soil should be deep and friable to allow for good root development", "Tobacco requires warm temperatures ranging from 20°C to 30°C for optimal growth and yield", "Tobacco requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields."]
+  },
+  {
+    "tag": "cardomoncondition",
+    "patterns": ["which condition is suitable cardomon crop?", "which condition required for cardomon crop?", "condition for cardomon crop","condition suitable for cardomon"],
+    "responses": ["Cardamom requires a tropical climate with a temperature range of 20°C to 35°C and a relative humidity of 70% to 80%. It requires well-distributed rainfall, with an average annual rainfall of 1500 to 3000 mm. Cardamom grows well in areas with an altitude of 600 to 1500 meters above sea level.","Cardamom grows well in well-drained, loamy soil that is rich in organic matter and essential plant nutrients. The soil pH range should be between 5.5 and 6.5. The soil should be fertile, with a good water-holding capacity.","Planting: Cardamom is usually propagated through suckers. The suckers should be healthy and disease-free. The planting should be done during the onset of monsoon, and the spacing between plants should be 2.5 to 3 meters.","Water: Cardamom requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels."]
+  },
+  {
+    "tag": "lentilcondition",
+    "patterns": ["which condition is suitable for lentil crop?", "which condition required for lentil crop?", "condition for lentil crop","condition suitable for lentil","temperature for lentil"],
+    "responses": ["Lentil requires a cool and dry climate for optimal growth and yield. The crop can tolerate temperatures ranging from 10°C to 30°C, but the ideal temperature range for growth and yield is 18°C to 22°C. Lentil requires well-distributed rainfall or irrigation, with an average annual rainfall of 350 to 550 mm.","Lentil grows well in well-drained loamy soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 6.0 and 7.5. It is important to ensure proper soil fertility, as lentil is a heavy feeder and requires adequate nutrients for growth and yield.","Lentil is typically planted in the fall or early spring, depending on the climate and planting zone. The planting should be done at a depth of 3 to 5 cm, with a row spacing of 30 to 40 cm. It is important to ensure good seedbed preparation and weed control for optimal growth and yield.","Lentil requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels."]
+  },
+  {
+    "tag": "teacondition",
+    "patterns": ["which condition is suitable for tea crop?", "which condition required for tea crop?", "condition for tea crop","condition suitable for tea"],
+    "responses": ["Climate: Tea requires a tropical or subtropical climate for optimal growth and yield. The crop grows well in areas with high rainfall and moderate temperatures, with an average annual temperature range of 20°C to 30°C. Tea requires well-distributed rainfall of at least 1500 mm per year, with no extended dry periods.    Soil: Tea grows well in well-drained, deep, and fertile soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 4.5 and 5.5 for optimal growth and yield. It is important to ensure proper soil fertility, as tea is a heavy feeder and requires adequate nutrients for growth and yield.    Planting: Tea is typically propagated by vegetative means such as stem cuttings. The cuttings should be planted in well-prepared beds or trenches, with a spacing of 1 to 1.5 meters between rows and 0.5 to 1 meter between plants. It is important to ensure good soil drainage and regular weed control for optimal growth and yield.    Water: Tea requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels.    Pest and disease management: Tea is susceptible to various pests and diseases, including tea mosquito, red spider mite, and blister blight. Proper pest and disease management practices such as regular pruning, use of disease-resistant varieties, and timely application of pesticides can help prevent damage and improve yield.        "]
+  },
+  {
+    "tag": "cowpeacondition",
+    "patterns": ["which condition is suitable for cowpea crop?", "which condition required for cowpea crop?", "condition for cowpea crop","condition suitable for cowpea","condition suitable for bodi","condition required for black-eyed pea"],
+    "responses": ["Climate: Cowpea requires a warm and humid climate for optimal growth and yield. The crop grows well in areas with a temperature range of 25°C to 35°C and a minimum rainfall of 500-600 mm per year. Cowpea can tolerate drought but is sensitive to frost and low temperatures.    Soil: Cowpea grows well in well-drained soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 5.5 and 7.0 for optimal growth and yield. Cowpea can also tolerate slightly acidic soils but is sensitive to saline or alkaline soils.    Planting: Cowpea is typically planted in the spring or summer, when soil temperatures are warm. The seeds should be sown directly in the field at a depth of 2-4 cm and a spacing of 30-60 cm between rows and 10-15 cm between plants. Cowpea can also be intercropped with other crops such as maize, sorghum, or cassava.    Water: Cowpea requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels.    Pest and disease management: Cowpea is susceptible to various pests and diseases, including aphids, thrips, and powdery mildew. Proper pest and disease management practices such as crop rotation, use of disease-resistant varieties, and timely application of pesticides can help prevent damage and improve yield.       "]
+  },
+  {
+    "tag": "soybeancondition",
+    "patterns": ["which condition is suitable for soybean crop?", "which condition required for soybean crop?", "condition for soybean crop","condition suitable for soybean"],
+    "responses": ["Climate: Soybean requires a warm and humid climate for optimal growth and yield. The crop grows well in areas with a temperature range of 20°C to 30°C and a minimum rainfall of 500-600 mm per year. Soybean can tolerate drought but is sensitive to frost and low temperatures.    Soil: Soybean grows well in well-drained soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 6.0 and 7.0 for optimal growth and yield. Soybean can also tolerate slightly acidic soils but is sensitive to saline or alkaline soils.    Planting: Soybean is typically planted in the spring or early summer, when soil temperatures are warm. The seeds should be sown directly in the field at a depth of 2-4 cm and a spacing of 30-45 cm between rows and 5-10 cm between plants. Soybean can also be intercropped with other crops such as maize, sorghum, or cotton.    Water: Soybean requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels.    Pest and disease management: Soybean is susceptible to various pests and diseases, including aphids, stink bugs, and soybean rust. Proper pest and disease management practices such as crop rotation, use of disease-resistant varieties, and timely application of pesticides can help prevent damage and improve yield.          "]
+  },
+  {
+    "tag": "kalochanacondition blackgramcondition",
+    "patterns": ["which condition is suitable for blackgram crop?", "which condition required for blackgram crop?", "condition for blackgram crop","condition suitable for blackgram","condition required for kalo chana"],
+    "responses": ["Climate: Black gram grows best in a warm and humid climate with a temperature range of 25°C to 35°C. The crop requires a minimum rainfall of 500-600 mm per year but can tolerate drought conditions. Black gram is sensitive to frost and low temperatures.   Soil: Black gram grows well in well-drained soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 6.0 and 7.5 for optimal growth and yield. Black gram can tolerate slightly acidic soils but is sensitive to saline or alkaline soils.    Planting: Black gram is typically planted in the spring or early summer, when soil temperatures are warm. The seeds should be sown directly in the field at a depth of 3-5 cm and a spacing of 10-15 cm between rows and 5-10 cm between plants. Black gram can also be intercropped with other crops such as rice, maize, or sorghum.    Water: Black gram requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels.    Pest and disease management: Black gram is susceptible to various pests and diseases, including pod borer, leafhoppers, and mites. Proper pest and disease management practices such as crop rotation, use of disease-resistant varieties, and timely application of pesticides can help prevent damage and improve yield.      "]
+  },
+  {
+    "tag": "greengramcondition",
+    "patterns": ["which condition is suitable for greengram crop?", "which condition required for greengram crop?", "condition for greengram crop","condition suitable for greengram","condition required for mung bean"],
+    "responses": ["Climate: Green gram grows best in warm and humid climates with a temperature range of 25°C to 35°C. The crop requires a minimum rainfall of 600-800 mm per year but can tolerate drought conditions. Green gram is sensitive to frost and low temperatures.    Soil: Green gram grows well in well-drained soils that are rich in organic matter and essential plant nutrients. The soil pH range should be between 6.0 and 7.5 for optimal growth and yield. Green gram can tolerate slightly acidic soils but is sensitive to saline or alkaline soils.    Planting: Green gram is typically planted in the spring or early summer, when soil temperatures are warm. The seeds should be sown directly in the field at a depth of 3-5 cm and a spacing of 10-15 cm between rows and 5-10 cm between plants. Green gram can also be intercropped with other crops such as rice, maize, or sorghum.    Water: Green gram requires regular and adequate water for good growth and yield. The crop is typically grown in areas with sufficient rainfall or in irrigated fields. It is important to provide sufficient irrigation and drainage to maintain optimal soil moisture levels.    Pest and disease management: Green gram is susceptible to various pests and diseases, including leafhoppers, aphids, and powdery mildew. Proper pest and disease management practices such as crop rotation, use of disease-resistant varieties, and timely application of pesticides can help prevent damage and improve yield.          "]
+  },
+  {
+    "tag": "haluwabedcondition",
+    "patterns": ["which condition is suitable for haluwabed crop?", "which condition required for haluwabed crop?", "condition for haluwabed crop","condition suitable for haluwabed","condition required foe persimmon"],
+    "responses": ["Climate: Persimmons grow best in areas with a mild, subtropical climate, with a temperature range of 10-30°C. They can tolerate some frost, but extreme cold weather can damage or kill the tree.   Soil: Persimmons prefer well-drained, slightly acidic soils with a pH range of 6.0-6.5. The soil should be rich in organic matter and have good water-holding capacity.    Sunlight: Persimmon trees need full sunlight to grow and produce fruit. They should be planted in an area with at least 6-8 hours of direct sunlight per day.    Water: Persimmons require regular watering, especially during the growing season. The soil should be kept moist but not waterlogged, as excess water can lead to root rot.    Fertilizer: Persimmon trees benefit from regular fertilization with a balanced fertilizer, particularly during the growing season. However, excessive fertilizer can lead to excessive vegetative growth and reduced fruit production.    Pruning: Persimmon trees should be pruned regularly to promote good structure and air circulation, as well as to remove dead or diseased wood.    Pollination: Persimmons are typically self-fertile, but cross-pollination can increase fruit set and yield. Planting different varieties of persimmon trees can help to ensure good pollination.          "]
+  },
+  {
+    "tag": "guavacondition",
+    "patterns": ["which condition is suitable for guava crop?", "which condition required for guava crop?", "condition for guava crop","condition suitable for guava"],
+    "responses": ["Climate: Guavas grow best in areas with a warm, tropical or subtropical climate, with a temperature range of 20-30°C. They can tolerate some frost, but extreme cold weather can damage or kill the tree.    Soil: Guavas prefer well-drained, slightly acidic soils with a pH range of 4.5-7.0. The soil should be rich in organic matter and have good water-holding capacity.    Sunlight: Guava trees need full sunlight to grow and produce fruit. They should be planted in an area with at least 6-8 hours of direct sunlight per day.    Water: Guavas require regular watering, especially during the growing season. The soil should be kept moist but not waterlogged, as excess water can lead to root rot.    Fertilizer: Guava trees benefit from regular fertilization with a balanced fertilizer, particularly during the growing season. However, excessive fertilizer can lead to excessive vegetative growth and reduced fruit production.    Pruning: Guava trees should be pruned regularly to promote good structure and air circulation, as well as to remove dead or diseased wood.    Pollination: Guavas are typically self-fertile, but cross-pollination can increase fruit set and yield. Planting different varieties of guava trees can help to ensure good pollination.    Pest and disease management: Guava trees are susceptible to a number of pests and diseases, including fruit flies, scale insects, and anthracnose. Proper pest and disease management practices, such as regular monitoring, sanitation, and the use of organic or chemical control measures when necessary, are important for maintaining healthy trees and high fruit yields.      "]
+  },
+  {
+    "tag": "orangecondition",
+    "patterns": ["which condition is suitable for orange crop?", "which condition required for orange crop?", "condition for orange crop","condition suitable for orange"],
+    "responses": ["Climate: Oranges grow best in tropical and subtropical regions. They require warm temperatures, with an ideal temperature range between 15 to 38°C (60 to 100°F). Frost can damage the trees and fruit.    Soil: Oranges prefer well-drained soils with a pH between 6.0 and 7.5. The soil should be rich in organic matter and have good water holding capacity.    Sunlight: Oranges require full sunlight for optimal growth and fruit development. A minimum of 6 hours of direct sunlight is necessary.    Water: Oranges require regular watering, especially during the fruiting season. They do not tolerate waterlogged soils or drought conditions.    Fertilizer: Oranges benefit from regular applications of nitrogen, phosphorus, and potassium fertilizers. The timing and frequency of fertilizer applications depend on the specific variety of orange and the soil conditions.    Pest and disease control: Oranges are susceptible to a range of pests and diseases, including citrus greening, scale insects, and mites. Regular monitoring and application of appropriate pesticides are necessary to prevent or control infestations.     "]
+  },
+  {
+    "tag": "lemoncondition",
+    "patterns": ["which condition is suitable for lemon crop?", "which condition required for lemon crop?", "condition for lemon crop","condition suitable for lemon"],
+    "responses": [" Climate: Lemons grow best in tropical and subtropical regions. They require warm temperatures, with an ideal temperature range between 15 to 30°C (60 to 85°F). Frost can damage the trees and fruit.    Soil: Lemons prefer well-drained soils with a pH between 6.0 and 7.5. The soil should be rich in organic matter and have good water holding capacity.    Sunlight: Lemons require full sunlight for optimal growth and fruit development. A minimum of 6 hours of direct sunlight is necessary.    Water: Lemons require regular watering, especially during the fruiting season. They do not tolerate waterlogged soils or drought conditions.    Fertilizer: Lemons benefit from regular applications of nitrogen, phosphorus, and potassium fertilizers. The timing and frequency of fertilizer applications depend on the specific variety of lemon and the soil conditions.    Pest and disease control: Lemons are susceptible to a range of pests and diseases, including citrus greening, scale insects, and mites. Regular monitoring and application of appropriate pesticides are necessary to prevent or control infestations.      "]
+  },
+  {
+    "tag": "chickpeacondition",
+    "patterns": ["which condition is suitable for chickpea crop?", "which condition required for chickpea crop?", "condition for chickpea crop","condition suitable for chickpea"],
+    "responses": ["Climate: Chickpeas prefer cool and dry climates, with an ideal temperature range between 20 to 25°C (68 to 77°F). They can tolerate frost but do not grow well in hot and humid conditions.   Soil: Chickpeas grow best in well-drained soils with a pH between 6.0 and 7.5. The soil should be rich in organic matter and have good water holding capacity.    Sunlight: Chickpeas require full sunlight for optimal growth and development.    Water: Chickpeas require moderate watering, with regular deep watering during flowering and pod development. They do not tolerate waterlogged soils or drought conditions.    Fertilizer: Chickpeas benefit from regular applications of nitrogen, phosphorus, and potassium fertilizers. The timing and frequency of fertilizer applications depend on the specific variety of chickpea and the soil conditions.    Pest and disease control: Chickpeas are susceptible to a range of pests and diseases, including aphids, pod borers, and root rot. Regular monitoring and application of appropriate pesticides are necessary to prevent or control infestations.      "]
+  },
+  {
+    "tag": "mustardcondition",
+    "patterns": ["which condition is suitable for mustard crop?", "which condition required for mustard crop?", "condition for mustard crop","condition suitable for mustard"],
+    "responses": ["Climate: Mustard prefers cool and moist climates with an ideal temperature range between 15 to 25°C (59 to 77°F). It can tolerate frost but does not grow well in hot and dry conditions.    Soil: Mustard grows best in well-drained soils with a pH between 6.0 and 7.5. The soil should be rich in organic matter and have good water holding capacity.    Sunlight: Mustard requires full sunlight for optimal growth and development.    Water: Mustard requires moderate watering, with regular deep watering during flowering and pod development. They do not tolerate waterlogged soils or drought conditions.    Fertilizer: Mustard benefits from regular applications of nitrogen, phosphorus, and potassium fertilizers. The timing and frequency of fertilizer applications depend on the specific variety of mustard and the soil conditions.    Pest and disease control: Mustard is susceptible to a range of pests and diseases, including aphids, flea beetles, and downy mildew. Regular monitoring and application of appropriate pesticides are necessary to prevent or control infestations.      "]
+  },
+  {
+    "tag": "rapseedcondition",
+    "patterns": ["which condition is suitable for rapseed crop?", "which condition required for rapseed crop?", "condition for rapseed crop","condition suitable for rapseed"],
+    "responses": ["Climate: Rapeseed grows best in areas with a cool and moist climate. The crop can withstand low temperatures, but it is sensitive to high temperatures during the flowering and pod-filling stages. It requires moderate rainfall, with an average of 50-75 cm per year.   Soil: The crop can grow in a wide range of soils, but it prefers well-drained, deep loamy soils with a pH of 6.0-7.5. The soil should be rich in organic matter and have good water-holding capacity.    Planting: Rapeseed is usually sown in the fall season, from September to November. The seeds are sown at a depth of 2-3 cm, with a spacing of 30-45 cm between rows and 10-15 cm between plants.    Fertilizer: Rapeseed requires adequate amounts of nitrogen, phosphorus, and potassium for proper growth and development. The fertilizer should be applied in two or three splits during the growing season.    Weed and pest control: Rapeseed is susceptible to weed infestation and pest attacks. Effective weed and pest control measures should be taken to ensure a healthy crop.    Harvesting: Rapeseed is usually harvested in the spring season, from March to May. The crop should be harvested when the pods turn yellow-brown and the seeds become hard and dry. The seeds are then threshed to separate them from the pods and other plant debris.           "]
+  },
+  {
+    "tag": "linseedcondition",
+    "patterns": ["which condition is suitable for linseed crop?", "which condition required for linseed crop?", "condition for linseed crop","condition suitable for linseed"],
+    "responses": ["Climate: Linseed prefers cool and moist climates with an ideal temperature range between 15 to 20°C (59 to 68°F). It can tolerate frost but does not grow well in hot and dry conditions.   Soil: Linseed grows best in well-drained soils with a pH between 6.0 and 7.5. The soil should be rich in organic matter and have good water holding capacity.    Sunlight: Linseed requires full sunlight for optimal growth and development.    Water: Linseed requires moderate watering, with regular deep watering during flowering and seed development. They do not tolerate waterlogged soils or drought conditions.    Fertilizer: Linseed benefits from regular applications of nitrogen, phosphorus, and potassium fertilizers. The timing and frequency of fertilizer applications depend on the specific variety of linseed and the soil conditions.    Pest and disease control: Linseed is susceptible to a range of pests and diseases, including aphids, spider mites, and powdery mildew. Regular monitoring and application of appropriate pesticides are necessary to prevent or control infestations.      "]
+  },
+  {
+    "tag": "citruscondition",
+    "patterns": ["which condition is suitable for citrus crop?", "which condition required for citrus crop?", "condition for citrus crop","condition suitable for citrus"],
+    "responses": ["Climate: Citrus thrives in warm to temperate climates. It requires a minimum of 100 frost-free days per year, and temperatures between 13°C to 38°C are optimal.    Soil: Citrus requires well-drained soil that is rich in organic matter. The soil pH should be between 5.5 and 7.5.    Water: Citrus requires regular watering to maintain healthy growth and fruit production. The frequency and amount of water depend on various factors, including soil type, temperature, and rainfall.    Fertilizer: Citrus requires regular fertilization to maintain healthy growth and fruit production. The type and amount of fertilizer depend on various factors, including soil fertility and tree age.    Pest and disease control: Citrus is susceptible to various pests and diseases, which can affect tree health and fruit production. Proper pest and disease control measures, including timely pruning and spraying, are essential to maintain healthy trees and fruit production.      "]
+  },
+  {
+    "tag": "coriandercondition",
+    "patterns": ["which condition is suitable for coriander crop?", "which condition required for coriander crop?", "condition for coriander crop","condition suitable for coriander"],
+    "responses": ["Temperature: Coriander grows well in a temperature range of 17-27°C (62-81°F). It can tolerate a minimum temperature of 7°C (45°F) and a maximum temperature of 35°C (95°F).    Soil: Coriander prefers well-drained loamy soils with a pH range of 6.0-7.0. The soil should be rich in organic matter and have good water-holding capacity.    Water: Coriander requires moderate watering. The crop should be watered regularly but not excessively. Overwatering can lead to root rot.    Sunlight: Coriander requires partial to full sunlight. It grows well in areas where it receives 4-6 hours of sunlight daily.    Nutrients: Coriander requires nitrogen, phosphorus, and potassium for optimal growth. It is advisable to apply organic fertilizers like compost, manure, and vermicompost to the soil before planting.    "]
+  },
+  {
+    "tag": "applecondition",
+    "patterns": ["which condition is suitable for apple crop?", "which condition required for apple crop?", "condition for apple crop","condition suitable for apple"],
+    "responses": ["Apples generally require a temperate climate with a cool to cold winter and warm summer. The ideal temperature range for apple cultivation is 15°C to 24°C during the growing season, and the optimum temperature for fruit ripening is between 20°C to 22°C. Apples require well-drained, deep, loamy soil with a pH range of 5.5 to 6.5 for better growth and yield. The soil should be rich in organic matter, and adequate moisture should be maintained throughout the growing season. Apple trees require full sun exposure for at least 6-8 hours a day for better growth and fruit production. Proper pruning and training are also essential for maintaining the shape of the tree and to prevent diseases and pests      "]
+  },
+  {
+    "tag": "walnutcondition",
+    "patterns": ["which condition is suitable for walnut crop?", "which condition required for walnut crop?", "condition for walnut crop","condition suitable for walnut"],
+    "responses": ["Walnuts require a temperate climate with a cool to cold winter and warm summer. The ideal temperature range for walnut cultivation is 15°C to 25°C during the growing season, and the optimum temperature for fruit ripening is between 20°C to 25°C. Walnuts prefer well-drained, deep, loamy soil with a pH range of 6.0 to 7.5 for better growth and yield. The soil should be rich in organic matter and nutrients, and adequate moisture should be maintained throughout the growing season. Walnut trees require full sun exposure for at least 6-8 hours a day for better growth and fruit production. Proper pruning and training are also essential for maintaining the shape of the tree and to prevent diseases and pests.      "]
+  },
+  {
+    "tag": "bananacondition",
+    "patterns": ["which condition is suitable for banana crop?", "which condition required for banana crop?", "condition for banana crop","condition suitable for banana"],
+    "responses": ["Bananas require warm, humid conditions to grow well. The ideal temperature range for banana cultivation is 26°C to 30°C during the day and not below 15°C at night. They prefer well-drained soil with a pH range of 5.5 to 7.0 for better growth and yield. The soil should be rich in organic matter and nutrients, and adequate moisture should be maintained throughout the growing season. Bananas require regular irrigation, especially during dry periods, to ensure optimum growth and yield. They also require regular fertilization with nitrogen, phosphorus, and potassium, as well as other micronutrients, to maintain good health and yield. Adequate sunlight is also essential for banana growth, with the ideal being full sun exposure for at least 6-8 hours a day. Proper pest and disease management is also necessary for a successful banana crop.     "]
+  },
+  {
+    "tag": "mangocondition",
+    "patterns": ["which condition is suitable for mango crop?", "which condition required for mango crop?", "condition for mango crop","condition suitable for mango"],
+    "responses": ["Climate: Mango requires a warm and humid climate. The ideal temperature for mango cultivation is between 24°C to 27°C. It can also tolerate temperatures up to 50°C during the fruiting season.    Soil: Mango can be grown in a wide range of soils, but it prefers well-drained loamy soils. The soil pH should be between 6.5 to 7.5.    Irrigation: Mango requires frequent and regular irrigation during the growing season. It is important to maintain soil moisture content at a level of about 60-70% of field capacity.    Fertilization: Mango requires regular application of fertilizers to promote growth and fruit development. Nitrogen, phosphorus, and potassium are the major nutrients required by mango.    Pruning: Pruning is essential for proper tree growth and development. It helps to control the tree's size, shape, and density and ensures maximum light penetration into the tree canopy.    Disease and pest management: Mango is susceptible to various pests and diseases. Regular monitoring and management of pests and diseases are required to ensure good quality and yield.        "]
+  },
+  {
+    "tag": "peachcondition",
+    "patterns": ["which condition is suitable for peach crop?", "which condition required for peach crop?", "condition for peach crop","condition suitable for peach"],
+    "responses": ["Climate: Peach trees require a cool winter season for dormancy, followed by a warm spring for flowering and fruit development. The ideal temperature range for peach cultivation is between 13°C to 30°C.   Soil: Peach trees prefer well-drained, sandy loam soil with a pH level of 6 to 7.5. The soil should be fertile, rich in organic matter and have good water-holding capacity.    Sunlight: Peach trees require full sun exposure for at least six hours a day to produce quality fruit. They do not grow well in the shade.    Water: Peach trees require regular watering during the growing season to ensure adequate soil moisture. However, the soil should be well-drained to prevent waterlogging.    Pruning: Peach trees require annual pruning to maintain their shape and size, promote fruiting, and remove diseased or damaged wood.    Fertilization: Peach trees require regular fertilization to ensure optimal growth and fruit production. The fertilizer should be balanced, containing equal amounts of nitrogen, phosphorus, and potassium, with additional micronutrients.    Pest and disease control: Peach trees are susceptible to several pests and diseases, including aphids, mites, peach leaf curl, and bacterial spot. Proper monitoring and timely application of appropriate control measures, including the use of organic and chemical pesticides, are essential for successful peach cultivation.        "]
+  },
+  {
+    "tag": "plumcondition",
+    "patterns": ["which condition is suitable for plum crop?", "which condition required for plum crop?", "condition for plum crop","condition suitable for plum"],
+    "responses": ["Plum trees require well-drained soil that is slightly acidic with a pH between 5.5 to 6.5. They need full sun exposure and at least six hours of direct sunlight per day. Plum trees require regular watering, especially during the fruit development stage. They prefer a moderate climate with cool winters and hot summers. Plum trees should be pruned annually to remove dead or diseased wood and to shape the tree. Pests and diseases can be managed by maintaining good tree health, practicing good sanitation, and using appropriate treatments when necessary.     "]
+  },
+  {
+    "tag": "pearcondition",
+    "patterns": ["which condition is suitable for plum crop?", "which condition required for plum crop?", "condition for plum crop","condition suitable for plum"],
+    "responses": ["Climate: Pears grow well in areas with moderate temperatures and low humidity. They require a cool winter period with temperatures below 7°C for optimal flowering and fruit set.    Soil: Pears prefer well-drained soils with a pH between 6.0 to 7.0. They grow best in deep loamy soils rich in organic matter.    Sunlight: Pears require full sunlight for at least 6 to 8 hours a day for good growth and fruit production.    Water: Pears require regular and adequate watering, especially during fruit development. The soil should be kept moist but not waterlogged.    Pruning: Pruning is an essential part of pear cultivation as it helps to maintain the tree's shape, size, and health. Pruning also promotes the growth of new fruiting wood and improves fruit quality.    Fertilizer: Pears require regular fertilization to ensure good growth and fruit production. Fertilizers containing nitrogen, phosphorus, and potassium in a ratio of 1:2:1 are ideal for pear trees.    Pest and disease control: Pears are susceptible to various pests and diseases, including pear psylla, codling moth, and fire blight. Regular monitoring and appropriate control measures are necessary to prevent and manage these problems.          "]
+  },
+  {
+    "tag": "radishcondition",
+    "patterns": ["which condition is suitable for radish crop?", "which condition required for radish crop?", "condition for radish crop","condition suitable for radish"],
+    "responses": ["Radish is a cool-season crop that prefers temperatures between 10-20°C for optimum growth. The crop requires a well-drained and fertile soil with a pH between 6.0 and 7.0. It requires adequate moisture and regular watering to prevent cracking and promote good root development. Radish is a fast-growing crop that can be harvested in as little as 3-4 weeks after planting, and it can be grown in both full sun and partial shade. To avoid excessive bolting and bitterness, radish plants should be kept well-watered and harvested before the onset of hot weather.      "]
+  },
+  {
+    "tag": "gingercondition",
+    "patterns": ["which condition is suitable for ginger crop?", "which condition required for ginger crop?", "condition for ginger crop","condition suitable for ginger"],
+    "responses": ["Soil: The soil should be well-drained, fertile, and rich in organic matter. The pH of the soil should be between 5.5 and 6.5.   Temperature: Ginger grows well in warm and humid weather conditions. The ideal temperature for ginger cultivation is between 25°C and 30°C. Temperatures below 20°C can cause damage to the crop.    Water: Ginger requires regular watering, especially during the growing season. The crop needs adequate moisture to produce high-quality rhizomes.    Sunlight: Ginger requires partial shade, especially during the early stages of growth. Direct sunlight can scorch the leaves and cause damage to the crop.   Fertilizer: Ginger requires regular fertilization to produce healthy rhizomes. A balanced fertilizer with a nitrogen, phosphorus, and potassium (NPK) ratio of 5:8:8 is recommended.    Planting material: The planting material for ginger should be of good quality and disease-free. The rhizomes should be healthy, firm, and free from damage.    Weed control: Weeds can compete with ginger for nutrients and water. It is important to control weeds regularly to ensure good growth and yield.       "]
+  },
+  {
+    "tag": "garliccondition",
+    "patterns": ["which condition is suitable for garlic crop?", "which condition required for garlic crop?", "condition for garlic crop","condition suitable for garlic"],
+    "responses": ["Garlic is a cool-season crop that requires a fertile, well-drained soil with a pH between 6.0 and 7.0. It grows best in areas with cool temperatures (15-25°C) and moderate rainfall (60-80 cm annually). Garlic prefers full sun and requires moderate watering. The crop also benefits from regular weeding, mulching, and fertilization. Garlic bulbs mature in about 6-8 months and are ready for harvesting when the leaves start to turn brown and dry out. After harvesting, the bulbs are usually left in the field to dry for a few days before being cleaned and sorted for storage.       "]
+  },
+  {
+    "tag": "tumericcondition",
+    "patterns": ["which condition is suitable for tumeric crop?", "which condition required for tumeric crop?", "condition for tumeric crop","condition suitable for tumeric"],
+    "responses": ["       "]
+  },
+  {
+    "tag": "chillicondition",
+    "patterns": ["which condition is suitable for potato crop?", "which condition required for potato crop?", "condition for potato crop","condition suitable for potato"],
+    "responses": ["Climate: Turmeric requires a warm and humid climate with an average temperature of 20-30°C. It can tolerate a temperature range of 10°C to 40°C, but the optimal growth temperature is between 25°C to 35°C. It requires a well-distributed rainfall of around 1500-2000 mm per annum.    Soil: Turmeric grows best in well-drained soils that are rich in organic matter. The pH range of the soil should be between 5.5 to 7.5. It can also grow in sandy loam and clayey loam soils.    Land Preparation: The land should be plowed well and brought to a fine tilth before planting. The soil should be free from weeds, rocks, and other debris.    Planting: Turmeric is propagated through rhizomes. The rhizomes are planted in furrows or pits with a spacing of 45 cm x 30 cm.    Fertilizers: The application of organic manure is beneficial for the growth and yield of turmeric. The recommended dose of NPK fertilizers is 60:60:40 kg per hectare.    Irrigation: Turmeric requires regular watering, especially during the dry season. The first irrigation should be given immediately after planting, and subsequent irrigations should be given at an interval of 5-7 days.    Harvesting: Turmeric is ready for harvesting after 8-9 months of planting when the leaves start drying up. The rhizomes are dug out carefully with the help of a spade or a fork. After harvesting, the rhizomes are dried and cured before storage.         "]
+  },
+  {
+    "tag": "tomatocondition",
+    "patterns": ["which condition is suitable for tomato crop?", "which condition required for tomato crop?", "condition for tomato crop","condition suitable for tomato"],
+    "responses": ["Climate: Tomatoes prefer warm temperatures for optimal growth, with temperatures between 21°C to 30°C being ideal. They are susceptible to frost and cold temperatures can cause damage or death to the plant.    Soil: Tomatoes grow well in well-drained soils with a pH between 6.0 to 6.8. The soil should be rich in organic matter, well-aerated, and able to retain moisture. It is best to avoid soils with high salt content or soils that have been recently treated with herbicides.    Water: Tomatoes require adequate water for optimal growth. The plants should be watered regularly, especially during dry spells, but care should be taken to avoid overwatering. Overwatering can lead to root rot and fungal diseases.    Light: Tomatoes require full sun to grow and produce fruit. They should receive at least 6 to 8 hours of direct sunlight each day.    Nutrients: Tomatoes require adequate nutrients to grow and produce fruit. A balanced fertilizer containing nitrogen, phosphorus, and potassium should be used. It is important to avoid over-fertilizing as this can lead to excessive vegetative growth and reduce fruit production.    Pests and diseases: Tomatoes are susceptible to a range of pests and diseases, including aphids, whiteflies, and tomato hornworms. It is important to monitor plants regularly and take steps to control pests and diseases before they become a problem.           "]
+  },
+  {
+    "tag": "pulsecondition",
+    "patterns": ["which condition is suitable for pulse crop?", "which condition required for pulse crop?", "condition for pulse crop","condition suitable for pulse"],
+    "responses": ["Climate: Pulses can grow in various climates, but generally, they prefer warm temperatures between 15 to 30 degrees Celsius. They can also tolerate cold temperatures as long as the soil temperature is above 10 degrees Celsius.    Soil: Pulses grow well in well-drained soils with good organic matter content. They can also tolerate acidic soils with a pH range of 5.5 to 7.5. The soil should be moist but not waterlogged.    Water: Pulses require regular watering, especially during the flowering and pod development stages. However, overwatering should be avoided as it can lead to waterlogging and root rot.    Fertilizer: Pulses require nitrogen-rich soil, so adding compost or manure can be beneficial. Nitrogen fixation can also be promoted by planting pulses in rotation with other crops, such as cereals.    Pest and disease management: Common pests and diseases that affect pulses include aphids, thrips, pod borers, and fungal diseases like rust and powdery mildew. Crop rotation and the use of pest-resistant varieties can help manage these issues.     "]
+  },
+  {
+    "tag": "junarcondition",
+    "patterns": ["which condition is suitable for junar crop?", "which condition required for junar crop?", "condition for junar crop","condition suitable for junar","condition required for sweetorange"],
+    "responses": ["Climate: Sweet orange requires a warm and humid climate for its growth. It can be grown in areas with an average temperature of 15-30°C. The crop requires a moderate rainfall ranging from 600-2500 mm annually.   Soil: The crop can be grown in a wide range of soils. However, well-drained soils with a pH of 6.0-7.5 are ideal for its growth.    Sunlight: Sweet orange requires full sunlight for its growth and fruiting. It can be grown in areas receiving 6-8 hours of direct sunlight per day.    Irrigation: The crop requires regular irrigation during the growing season. The frequency and amount of irrigation depend on the soil type, climate, and growth stage of the crop.    Fertilization: Proper fertilization is essential for the growth and yield of sweet orange. The crop requires a balanced fertilizer application of nitrogen, phosphorus, and potassium along with micronutrients.    Pest and disease management: The crop is susceptible to a range of pests and diseases. Proper pest and disease management practices should be followed to control their incidence and spread.    Pruning: Pruning is an essential cultural practice in sweet orange cultivation. It helps to maintain the shape of the tree, remove dead and diseased wood, and promote new growth.      "]
+  },
+  {
+    "tag": "cucumbercondition",
+    "patterns": ["which condition is suitable for cucumber crop?", "which condition required for cucumber crop?", "condition for cucumber crop","condition suitable for cucumber"],
+    "responses": ["Temperature: Cucumber plants prefer warm temperatures between 20-30°C (68-86°F). They cannot tolerate frost and are susceptible to cold temperatures, so it is important to avoid planting them too early in the season.    Sunlight: Cucumbers need plenty of sunlight to grow, so it is best to plant them in a location that receives at least 6-8 hours of direct sunlight per day.    Soil: Cucumbers grow best in well-drained soil that is rich in organic matter. The soil pH should be between 6.0 and 7.0.    Water: Cucumbers require regular and consistent watering, especially during the flowering and fruiting stages. It is important to keep the soil moist but not waterlogged.    Nutrients: Cucumbers are heavy feeders and require regular fertilization with a balanced fertilizer that is rich in nitrogen, phosphorus, and potassium. It is also important to provide additional nutrients, such as calcium and magnesium, to prevent blossom end rot.      "]
+  },
+  {
+    "tag": "pumpkincondition",
+    "patterns": ["which condition is suitable for pumpkin crop?", "which condition required for pumpkin crop?", "condition for pumpkin crop","condition suitable for pumpkin"],
+    "responses": ["Soil: Well-drained, fertile, and loamy soil with a pH range of 6.0-7.0 is ideal for pumpkin cultivation.    Sunlight: Pumpkin requires full sunlight of 6-8 hours per day for optimum growth and yield.    Water: Adequate water supply is essential for pumpkin growth, especially during the fruiting stage. The soil should be kept consistently moist, but not waterlogged.    Fertilizer: Pumpkin is a heavy feeder crop and requires a good amount of nutrients for optimum growth. The soil should be enriched with well-decomposed organic matter, and a balanced fertilizer containing nitrogen, phosphorus, and potassium should be applied.    Planting: Pumpkin is generally planted during the summer season. The seeds should be planted at a depth of 2-3 cm with a spacing of 2-3 feet between plants.    Pest and disease management: Pumpkin is susceptible to various pests and diseases, such as squash bugs, cucumber beetles, powdery mildew, and downy mildew. Proper pest and disease management strategies should be implemented to avoid damage to the crop.          "]
+  },
+  {
+    "tag": "carrortcondition",
+    "patterns": ["which condition is suitable for carrot crop?", "which condition required for carrot crop?", "condition for carrot crop","condition suitable for carrot"],
+    "responses": ["Carrots are a cool-season crop and grow best in well-draining, sandy soil that is rich in organic matter. They require a pH between 6.0 and 6.8. Carrots should be planted in full sun, but they can also tolerate some shade. They need consistent moisture throughout the growing season to prevent the roots from becoming woody and bitter. Carrots can be grown in both spring and fall, but they are most commonly planted in the fall for a winter harvest.    "]
+  },
+  {
+    "tag": "cabbagecondition",
+    "patterns": ["which condition is suitable for cabbage crop?", "which condition required for cabbage crop?", "condition for cabbage crop","condition suitable for cabbage"],
+    "responses": ["Temperature: Cabbage grows best in cooler temperatures ranging between 15-25°C. Temperatures below 5°C or above 30°C can affect the growth and development of the plant.    Soil: Cabbage grows best in well-draining soil with good water retention capacity. The pH of the soil should be between 6.0-7.5.    Sunlight: Cabbage requires full sunlight for at least 6 hours a day.    Water: Adequate water supply is necessary for the proper growth and development of the plant. Cabbage needs a regular supply of water, especially during the head formation stage.    Fertilizer: Cabbage requires a balanced supply of nutrients, particularly nitrogen, phosphorus, and potassium. Adding organic matter to the soil before planting can improve soil fertility and nutrient availability.       "]
+  },
+  {
+    "tag": "spinachcondition",
+    "patterns": ["which condition is suitable for spinach crop?", "which condition required for spinach crop?", "condition for spinach crop","condition suitable for spinach"],
+    "responses": ["Spinach is a cool-season crop that thrives in cool, moist conditions. It grows best in soil that is rich in organic matter, with a pH between 6.0 and 7.5. It requires regular watering, especially during hot, dry weather, but excess water can cause disease problems. Spinach prefers partial shade but can tolerate full sun in cool climates. It is a relatively fast-growing crop that can be harvested in as little as four to six weeks from planting. Spinach is also a heavy feeder, so it is important to fertilize it regularly with a balanced fertilizer.     "]
+  },
+  {
+    "tag": "farmerscheme",
+    "patterns": ["nepal government scheme for nepali farmer", "programs for nepali farmer"],
+    "responses": ["Prime Minister Agriculture Modernization Project (PMAMP): Launched in 2018, this project aims to modernize agriculture in Nepal by improving access to technology, market, and financial services for farmers. Under this project, the government provides subsidies on agricultural inputs, credit facilities, and training programs to farmers.         Agriculture Development Strategy (ADS): Launched in 2015, this strategy aims to increase agricultural productivity and promote commercial agriculture in Nepal. It focuses on improving irrigation, expanding access to credit and inputs, and enhancing the skills of farmers through training and education.        Agriculture Inputs Subsidy Program (AISP): Launched in 2015, this program provides subsidies on agricultural inputs such as seeds, fertilizers, and pesticides to smallholder farmers in Nepal. It aims to improve agricultural productivity and increase the income of farmers.        Crop Insurance Program: The government of Nepal has launched a crop insurance program to provide insurance coverage to farmers against crop loss due to natural calamities, pests, and diseases. The program aims to reduce the vulnerability of farmers to climate risks and ensure their income security.        Agriculture Knowledge Center (AKC): The Agriculture Knowledge Center is a government-run center that provides farmers with information on modern agricultural practices, market trends, and weather forecasts. The center also provides training programs to farmers to enhance their skills and knowledge.        Agriculture Commercialization and Trade Integration Program (ACTI): The ACTI program aims to promote agricultural commercialization and trade integration by facilitating access to markets, improving infrastructure, and enhancing the skills and knowledge of farmers.        Farmer Field School (FFS): The FFS is a training program that provides hands-on training to farmers on sustainable agriculture practices. The program aims to enhance the skills and knowledge of farmers and promote the adoption of sustainable agriculture practices.        "]
+  },
+  {
+    "tag": "farmerpolicies",
+    "patterns": ["Important government policies for nepali farmer", "policies for nepali farmer"],
+    "responses": ["Agriculture Development Policy: The Agriculture Development Policy of Nepal provides a framework for the development of agriculture in Nepal. The policy aims to increase agricultural productivity, promote commercial agriculture, and ensure food security for the country.        National Agriculture Policy: The National Agriculture Policy focuses on increasing agricultural productivity, enhancing farmers' income, and promoting sustainable agriculture practices. The policy emphasizes the need to improve irrigation, enhance access to credit, and promote agricultural research and development.        Agricultural Input Policy: The Agricultural Input Policy aims to ensure the availability of quality inputs such as seeds, fertilizers, and pesticides at affordable prices for farmers. The policy emphasizes the need to promote the use of organic inputs and reduce the use of harmful chemicals in agriculture.        Land Use Policy: The Land Use Policy of Nepal aims to promote sustainable land use practices and ensure equitable access to land for all farmers. The policy emphasizes the need to reduce land fragmentation, promote land consolidation, and enhance land productivity.        Agriculture Extension Policy: The Agriculture Extension Policy aims to enhance the skills and knowledge of farmers by providing them with technical support and training. The policy emphasizes the need to strengthen the agriculture extension system and promote the participation of farmers in extension activities.        "]
+  },
+  {
+    "tag": "fertilizeravailable",
+    "patterns": ["Fertilizer available for nepali farmer", "fertilizer for crop"],
+    "responses": ["Chemical fertilizers: Chemical fertilizers are synthetic fertilizers that are made from chemicals. They provide essential nutrients to crops such as nitrogen, phosphorus, and potassium. Some commonly used chemical fertilizers in Nepal are urea, diammonium phosphate (DAP), and muriate of potash (MOP).        Organic fertilizers: Organic fertilizers are made from natural materials such as compost, manure, and crop residues. They improve soil fertility, promote the growth of beneficial microorganisms, and enhance soil structure. Some commonly used organic fertilizers in Nepal are farmyard manure, vermicompost, and green manure.        Biofertilizers: Biofertilizers are living organisms such as bacteria, fungi, and algae that improve soil fertility and provide essential nutrients to crops. They can be used alone or in combination with chemical or organic fertilizers. Some commonly used biofertilizers in Nepal are Rhizobium, Azotobacter, and Azospirillum.        Micronutrient fertilizers: Micronutrient fertilizers are used to supply essential micronutrients such as zinc, iron, and manganese to crops. They are especially important in soils that are deficient in micronutrients. Some commonly used micronutrient fertilizers in Nepal are zinc sulfate, ferrous sulfate, and manganese sulfate.        "]
+  },
+  {
+    "tag": "seedsavailable",
+    "patterns": ["where can we get seed?","seed provided by government to nepali farmer", "are there any seed center for nepali farmer??"],
+    "responses": ["National Seed Company Limited (NSC): The NSC is a government-owned company that produces and distributes high-quality seeds of various crops such as paddy, maize, wheat, and vegetables. The company also provides technical assistance to farmers on seed selection and management.        Seed Village Program: The Seed Village Program is a government-run initiative that aims to promote the production and distribution of quality seeds by involving farmers in the seed production process. Under this program, farmers are provided with training, technical assistance, and inputs to produce quality seeds for their own use and for sale to other farmers.        Seed Replacement Program: The Seed Replacement Program is a government initiative that aims to replace low-quality seeds with high-quality seeds. Under this program, farmers are provided with high-quality seeds at subsidized rates, and the government also provides technical assistance to farmers on seed management.        Agriculture Knowledge Center (AKC): The AKC is a government-run center that provides farmers with information on modern agricultural practices, including seed selection and management. The center also provides training programs to farmers to enhance their skills and knowledge.        International Rice Research Institute (IRRI): The IRRI is an international organization that collaborates with the government of Nepal to provide farmers with high-quality rice seeds. The organization conducts research on rice seed varieties suitable for Nepali soil and climate conditions and distributes these seeds to farmers.      "]
+  }
+ ]
+}
